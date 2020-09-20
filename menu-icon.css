@@ -1,0 +1,12 @@
+:root {
+    --icon-color: #D84282;
+}
+
+#menu {
+    margin: 60px;
+}
+
+#menu::after {
+    display: block;
+    content: "";
+}

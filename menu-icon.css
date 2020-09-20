@@ -2,11 +2,47 @@
     --icon-color: #D84282;
 }
 
+body {
+    padding: 80px;
+}
+
 #menu {
-    margin: 60px;
+    display: block;
+    width: 80px;
+    height: 65px;
+    background-color: var(--icon-color);
+    position: relative;
+}
+
+#menu::before {
+    top: 15px;
 }
 
 #menu::after {
+    top: 40px;
+}
+
+#menu::before,
+#menu::after {
+    content: " ";
     display: block;
-    content: "";
+    width: 80px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+}
+
+#menu:hover::before {
+    width: 15px;
+    height: 80px;
+    top: 0;
+    left: 16px;
+}
+
+#menu:hover::after {
+    width: 15px;
+    height: 80px;
+    display: inline-block;
+    top: 0;
+    left: 49px;
 }
